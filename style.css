@@ -5,6 +5,19 @@
 html{
     scroll-behavior: smooth;
 }
+header{
+    background: url("/images/annie-spratt-QckxruozjRg-unsplash.jpg");
+    background-size: cover;
+    height:100vh;
+    display: flex;
+    
+}
+
+header h1{
+font-size: 50px;
+display: inline-block;
+margin: 25px;
+}
 
 nav{
     display: flex !important;
@@ -13,21 +26,12 @@ nav{
     position: fixed;
     top: 0;
     z-index: 1561651;
-      
-  
-}
-header{
-    background: url("/images/annie-spratt-QckxruozjRg-unsplash.jpg");
-    background-size: cover;
-    height:100vh;
-    display: flex;
-
+    height: auto;
+    transition: box-shadow .5s;
 }
 
-header h1{
-font-size: 50px;
-display: inline-block;
-margin: 25px;
+nav:hover {
+    box-shadow: 1px 6px 4px #ffffff;
 }
 
 ul{
@@ -97,8 +101,7 @@ nav ul li a {
 
 
 #map{
-
-     background:linear-gradient(25deg,#f3e309,#455aaa,#2626c7);
+     background:linear-gradient(160deg,#6fa0fc,#0033ff,#0c0a0a);
 }
 
 
@@ -113,13 +116,7 @@ nav ul li a {
     width: 40px;
  
 }
-
-
-
-
-
 /* -------------------------------------------- */
-
 
 #headline-card{
     
@@ -204,14 +201,14 @@ hr{
 
 
 #myBtn {
-    display: block; /* Hidden by default */
+    display: none; /*hidden by default*/
     position: fixed; /* Fixed/sticky position */
-    bottom: 70px; /* Place the button at the bottom of the page */
+    bottom: 30px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: #FFC107; /* Set a background color */
+    background-color: #cc9d12; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 8px 15px; /* Some padding */
@@ -221,7 +218,7 @@ hr{
   }
   
   #myBtn:hover {
-    background-color: rgb(240, 232, 232); /* Add a dark-grey background on hover */
+    background-color:#FFC107; /* Add a dark-grey background on hover */
   }
 
   /* ----------------------------------------------Media Queries--------------------------------------- */

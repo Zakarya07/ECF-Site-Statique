@@ -1,101 +1,105 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box !important;
 }
 
-nav{
+body h5 {
+    text-align: center;
+}
+
+body {
+    background-color: #f8f8fc !important;
+}
+
+nav {
     height: auto;
+    transition: box-shadow .5s;
 }
 
+nav:hover {
+    box-shadow: 1px 4px 4px #030301;
+}
 
-p{
+p {
     color: rgb(30, 143, 132);
     text-align: center;
     padding: 20px;
 }
-#display-programme{
+
+#display-programme {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px;
-    
+
 }
 
-.card{
+.card {
     margin: 10px;
     width: 20vw !important;
 }
 
 
-.card img{
+.card img {
     height: 46vh !important;
     border-bottom: 1px solid black;
     padding: 15px;
 }
 
-.card-body{
-    height: auto!important;
+.card-body {
+    height: auto !important;
 }
-.card-body h3{
+
+.card-body h3 {
     text-align: center;
 }
 
-body h5{
-    text-align:center;
+footer {
+    min-height: 25vh;
 }
-body{
-    background-color: #f8f8fc !important;
-}
-
 
 
 
 /* ----------------------------------------------Media Queries--------------------------------------- */
 
- /* Extra small devices (portrait phones, less than 576px) */
+/* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
-    #display-programme{
+    #display-programme {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin: 5px;
     }
 
-        .card{
-            margin: 10px;
-            width: 42vw !important;
-        }
+    .card {
+        margin: 10px;
+        width: 42vw !important;
+    }
 
-        .card img{
-            height: 26vh !important;
-            border-bottom: 1px solid black;
-            padding: 15px;
-        }
-        .card-body{
-            height: auto!important;
-            
-        }
+    .card img {
+        height: 26vh !important;
+        border-bottom: 1px solid black;
+        padding: 15px;
+    }
+
+    .card-body {
+        height: auto !important;
+
+    }
 }
 
- /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { 
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
 
-
- }
-
- /* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
-
- }
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
 
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { 
+@media (max-width: 1199.98px) {}
 
-
- }
-
- /*
+/*
   Extra large devices (large desktops)
  No media query since the extra-large breakpoint has no upper bound on its width
   */

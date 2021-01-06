@@ -8,7 +8,8 @@ window.onscroll = function() {
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    mybutton.style="display:flex;";
+    mybutton.classList.add(".lorel");
   } else {
     mybutton.style.display = "none";
   }
@@ -20,17 +21,3 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
-//------------------------------------ navbar ----------------------------------------- 
-
-let navbar= document.getElementById("myNav");
-
-if(document.body.scrollTo(0,100)|| document.documentElement.scrollTo(0,100))
-{
-  navbar.style.display= "none"
-}
-else{
-  navbar.style.display="block"
-}
-
-
