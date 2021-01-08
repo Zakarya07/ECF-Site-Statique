@@ -6,7 +6,7 @@ html{
     scroll-behavior: smooth;
 }
 header{
-    background: url("/images/annie-spratt-QckxruozjRg-unsplash.jpg");
+    background: url("images/annie-spratt-QckxruozjRg-unsplash.jpg");
     background-size: cover;
     height:100vh;
     display: flex;
@@ -188,7 +188,7 @@ hr{
 
 #evolution h2{
     font-style: italic;
-    color: rgb(245, 212, 23);
+    color: rgb(23, 93, 245);
 
 }
 
@@ -203,22 +203,27 @@ hr{
 #myBtn {
     display: none; /*hidden by default*/
     position: fixed; /* Fixed/sticky position */
-    bottom: 30px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
+    justify-content: center;
+    align-items:center;
+    bottom:2vh; /* Place the button at the bottom of the page */
+    right: 2vw; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
+    width:4vw;
+    height: 3vh;
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: #cc9d12; /* Set a background color */
-    color: white; /* Text color */
+    background-color: #000000; /* Set a background color */
+    color: rgb(255, 255, 255); /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 8px 15px; /* Some padding */
-    padding-bottom: 10px;
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+    border-radius: 1px; /* Rounded corners */
+    font-size:1.2em; /* Increase font size */
+    transition: background-color .5s,color 2s,transform 1s;
   }
   
   #myBtn:hover {
-    background-color:#FFC107; /* Add a dark-grey background on hover */
+    background-color:#e3e6f1; /* Add a dark-grey background on hover */
+    color:#0e52ff ;
+    transform: scaleX(1.1);
   }
 
   /* ----------------------------------------------Media Queries--------------------------------------- */
